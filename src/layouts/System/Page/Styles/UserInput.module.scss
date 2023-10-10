@@ -1,0 +1,169 @@
+:root {
+    --width-input: 305px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+    background: #fff;
+
+    .title {
+        text-transform: uppercase;
+        margin-bottom: 35px;
+        padding-top: 15px;
+        font-weight: 600;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    form {
+        font-family: 'Roboto';
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* form starting stylings ------------------------------- */
+    .group {
+        width: var(--width-input);
+        position: relative;
+        margin-bottom: 45px;
+    }
+    input {
+        margin-top: 5px;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: var(--width-input);
+        border: none;
+        border-bottom: 2px solid #757575;
+    }
+    input:focus {
+        outline: none;
+    }
+
+    /* LABEL ======================================= */
+    label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 0px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    /* active state */
+    input:focus ~ label,
+    input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: var(--blue);
+    }
+
+    /* BOTTOM BARS ================================= */
+    .bar {
+        position: relative;
+        display: block;
+        width: var(--width-input);
+    }
+    .bar:before,
+    .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 0px;
+        position: absolute;
+        background: var(--blue);
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    .bar:before {
+        left: 50%;
+    }
+    .bar:after {
+        right: 50%;
+    }
+
+    /* active state */
+    input:focus ~ .bar:before,
+    input:focus ~ .bar:after {
+        width: 50%;
+    }
+
+    /* HIGHLIGHTER ================================== */
+    .highlight {
+        position: absolute;
+        height: 60%;
+        width: 100px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    /* active state */
+    input:focus ~ .highlight {
+        -webkit-animation: inputHighlighter 0.3s ease;
+        -moz-animation: inputHighlighter 0.3s ease;
+        animation: inputHighlighter 0.3s ease;
+    }
+
+    /* ANIMATIONS ================ */
+    @-webkit-keyframes inputHighlighter {
+        from {
+            background: var(--blue);
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    @-moz-keyframes inputHighlighter {
+        from {
+            background: var(--blue);
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    @keyframes inputHighlighter {
+        from {
+            background: var(--blue);
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    .btn-add {
+        margin-bottom: 15px;
+        padding: 0 7px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-weight: 700;
+        height: 30px;
+        line-height: 30px;
+        -webkit-user-select: none;
+        user-select: none;
+        color: #fff;
+        background-color: var(--blue);
+    }
+}
+
+@media (max-width: 1450px) {
+    .container {
+        width: 950px;
+    }
+
+    :root {
+        --width-input: 260px;
+    }
+}

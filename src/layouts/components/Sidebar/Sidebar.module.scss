@@ -1,0 +1,31 @@
+.wrapper {
+    width: var(--width-sidebar);
+    height: 100vh;
+    // padding: 10px 0px;
+    background-color: #fff;
+}
+
+.navWrapper {
+    padding-top: 15px;
+    position: fixed;
+    height: 100vh;
+    background-color: #f5f5f5;
+    width: var(--width-sidebar);
+    border-right: 1px solid #ddd;
+}
+
+// mobile
+@media (max-width: 1350px) {
+    .wrapper {
+        width: 180px !important;
+    }
+    .navWrapper {
+        width: 180px !important;
+    }
+}
+
+@media (max-width: 1180px) {
+    .wrapper {
+        display: none;
+    }
+}

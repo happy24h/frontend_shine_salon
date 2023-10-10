@@ -1,0 +1,27 @@
+.cart-item-header {
+  border: 1px solid black;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.66);
+  margin: 15px;
+}
+
+.flex-just-space-between{
+  display: flex;
+  line-height: 22px;
+  justify-content: space-between;
+}
+.flex-just-space-center{
+  display: flex;
+  line-height: 22px;
+  justify-content: center;
+}
+.flex-just-space-left{
+  display: flex;
+  line-height: 22px;
+  justify-content: left;
+}
+.cards-dashboard{
+
+}
+.cart-chart{
+  min-height: 450px;
+}

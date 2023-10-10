@@ -1,0 +1,39 @@
+.card-wrapper {
+    min-height: 170px;
+    width: 100%;
+    margin-left: 20px;
+}
+.wrapper {
+    min-height: 200px;
+    padding: 0 0 10px;
+}
+.wrapper-btn {
+    display: flex;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+.btn-booking {
+    width: 110px;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fcaf17;
+    margin-bottom: 6px;
+    border: 3px solid #fcaf17;
+    &:hover {
+        border: 3px solid #80bdff;
+        background-color: #fcaf17 !important;
+        border: 3px solid #fcaf17;
+    }
+}
+
+@media (max-width: 720px) {
+    .card-wrapper {
+        margin-left: 0;
+    }
+    .btn-booking {
+        height: max-content;
+        width: 99px;
+        font-weight: bold;
+        font-size: 11px;
+    }
+}

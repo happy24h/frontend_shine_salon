@@ -1,0 +1,39 @@
+.thumbnail-branch {
+    // backgroundImage: `url(${text})`, width: 50, height: 50, borderRadius: 5
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../../../assets/images/no-image.png');
+}
+
+.wrapper-btn {
+    display: flex;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.btn-booking {
+    width: 112px;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fcaf17;
+    margin-bottom: 5px;
+}
+
+.info-employee {
+    display: flex;
+    // justify-content: space-between;
+    margin-bottom: 10px;
+}
+.image-booking {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+}

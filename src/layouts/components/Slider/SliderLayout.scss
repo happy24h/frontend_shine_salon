@@ -1,0 +1,264 @@
+.slider-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    height: 195px;
+    padding: 0 7px;
+}
+.image-slider {
+    height: 195px;
+    border-radius: var(--border-radius);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 1450px) {
+    .slider-wrapper {
+        width: 958px;
+    }
+
+    .image-slider {
+        height: 150px;
+    }
+}
+@media (max-width: 1199px) {
+    .slider-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .slider-wrapper {
+        height: 120px;
+    }
+
+    .image-slider {
+        height: 100px;
+    }
+}
+
+///// test
+///
+.home-header-banner {
+    width: 100%;
+    background-image: url('../../../assets/images/20221206_SC_w.jpg');
+    height: 485px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    .content-up {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1));
+        padding-top: 15px;
+        height: 65%;
+        margin-bottom: 0;
+
+        .title1 {
+            text-align: center;
+            font-size: 30px;
+            text-shadow: 1px 1px 1px #333;
+            margin-bottom: 5px;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .title2 {
+            text-align: center;
+            font-size: 30px;
+            text-shadow: 1px 1px 1px #333;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .search {
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 5px;
+            background: #ddd;
+            opacity: 0.8;
+
+            i {
+                margin: 0 5px;
+            }
+
+            input {
+                height: 30px;
+                width: 360px;
+                background: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    .form-input-booking {
+        font-family: be vietnam pro, sans-serif;
+        font-weight: 300;
+        background: linear-gradient(180deg, #81274d, #c71155);
+        max-width: 545px;
+        border-radius: 8px;
+        padding: 10px 15px;
+        // position: relative;
+        z-index: 3;
+        bottom: 0;
+        margin: 10px auto 0;
+        color: #fff;
+        box-shadow: 0 1px 6px rgba(31, 31, 30, 0.832);
+    }
+
+    .form-text-slogan {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-family: Oswald;
+    }
+
+    .form-text-slogan-down {
+        font-size: 18px;
+
+        font-family: Oswald;
+    }
+
+    .input-search-slider {
+        font-family: be vietnam pro, sans-serif;
+        font-weight: 600;
+        font-size: 20px !important;
+        width: 420px;
+        margin: 8px 0 15px;
+    }
+
+    .search-booking {
+        position: relative;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12px auto 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background: #fff;
+        // opacity: 0.8;
+
+        i {
+            margin: 0 5px;
+        }
+
+        input {
+            height: 30px;
+            width: 360px;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .content-down {
+        // border-bottom: 3px solid #efeef5;
+        height: 35%;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+
+        .options {
+            text-align: center;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+
+            .option-child {
+                width: 100px;
+
+                .icon-child {
+                    background: rgb(237 233 194);
+                    width: 40px;
+                    height: 40px;
+                    padding: 10px;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin: 0 auto;
+                    color: #49bce2;
+
+                    i {
+                        color: #49bce2;
+                        font-size: 20px;
+                    }
+                }
+
+                .text-child {
+                    font-size: 17px;
+                    font-weight: 500;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #49bce2;
+                    }
+                }
+            }
+
+            @media (max-width: 1020px) {
+                .option-child {
+                    width: 70px;
+                }
+            }
+            @media (max-width: 850px) {
+                .option-child {
+                    width: 50px;
+                }
+            }
+            @media (max-width: 720px) {
+                .option-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .image-slider {
+        height: 170px;
+    }
+    .home-header-banner .form-input-booking {
+        width: 350px;
+        padding: 10px 15px 0px;
+    }
+    .form-input-booking-select {
+        width: 320px;
+    }
+    .home-header-banner .content-down {
+        display: none;
+    }
+
+    .home-header-banner .content-up {
+        height: 100%;
+    }
+
+    .home-header-banner .input-search-slider {
+        width: 305px;
+    }
+
+    .home-header-banner .form-text-slogan {
+        font-size: 18px;
+    }
+    .home-header-banner .form-text-slogan-down {
+        font-size: 16px;
+    }
+
+    .home-header-banner .content-up .title1 {
+        font-size: 21px;
+    }
+    .home-header-banner .content-up .title2 {
+        font-size: 15px;
+    }
+
+    .home-header-banner {
+        height: 310px;
+    }
+}

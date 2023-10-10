@@ -1,0 +1,127 @@
+.doctor-detail-container {
+    height: 500px;
+
+    .intro-doctor {
+        margin: 0 auto;
+        width: 1200px;
+        display: flex;
+
+        .content-left {
+            background-image: url('../../../../assets/images/no-image.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            width: 20%;
+            // background: center center no-repeat;
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            margin: 10px 20px;
+        }
+
+        .content-right {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+
+            .up {
+                padding-top: 15px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .down {
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .schedule-doctor {
+        margin: 0 auto;
+        width: 1200px;
+        display: flex;
+
+        min-height: 200px;
+        padding: 10px 0;
+
+        .content-left {
+            width: 50%;
+        }
+        .content-right {
+            width: 50%;
+        }
+    }
+
+    .detail-infor-doctor {
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        background-color: #f9f9f9;
+        padding: 10px 100px;
+
+        li {
+            margin-left: 30px;
+        }
+        li:nth-child(10) {
+            margin-left: 37px;
+        }
+        // li::before {
+        //     content: '-->';
+        //     background: lightgray;
+        //     border-radius: 1ch;
+        //     padding-inline: 1ch;
+        //     margin-inline-end: 1ch;
+        // }
+
+        h3 {
+            font-size: 17px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+    .comment-doctor {
+        height: 50px;
+    }
+}
+
+@media (max-width: 740px) {
+    .doctor-detail-container .intro-doctor {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .doctor-detail-container .schedule-doctor {
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        min-height: 200px;
+        padding: 10px 0;
+    }
+
+    .doctor-detail-container .schedule-doctor .content-left,
+    .doctor-detail-container .schedule-doctor .content-right {
+        width: 100%;
+    }
+
+    .doctor-schedule-container .all-available-time .time-content .time-content-btns .btn-vie {
+        min-width: 105px;
+    }
+
+    .doctor-detail-container {
+        height: max-content;
+    }
+
+    .doctor-detail-container .detail-infor-doctor {
+        padding: 10px;
+    }
+
+    .doctor-detail-container .intro-doctor .content-right {
+        padding-right: 15px;
+    }
+    .doctor-schedule-container {
+        margin-bottom: 15px;
+    }
+}

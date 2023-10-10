@@ -1,0 +1,36 @@
+.wrapper-input-group {
+    display: flex;
+    justify-content: space-between;
+    // background-color: #ccc;
+}
+.input-group {
+    width: 600px;
+}
+
+.table-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter-number {
+    padding: 0 3px;
+    cursor: pointer;
+    // border: 1px solid #ff4d4f;
+    // border-radius: 12px;
+    color: #ccc;
+    font-size: 20px;
+    &:hover {
+        background-color: #f2f2f2;
+    }
+}
+
+.thumbnail-account {
+    // backgroundImage: `url(${text})`, width: 50, height: 50, borderRadius: 5
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../../../assets/images/no-image.png');
+}

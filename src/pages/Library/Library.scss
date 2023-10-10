@@ -1,0 +1,96 @@
+.library-content-left {
+    width: 67%;
+    background-color: #f5f5f5;
+    // height: 500px;
+    margin-left: 15px;
+}
+.library-content-right {
+    width: 30%;
+    background-color: #f5f5f5;
+    // height: 500px;
+}
+
+.header-content-library {
+    width: 100%;
+    height: 42px;
+    background-color: #ffd800;
+    line-height: 42px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    // font-family: Roboto-bold;
+}
+.row-content-library {
+    font-size: 13px;
+    padding: 10px 15px;
+    // margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    border-bottom: 1px solid #ccc;
+}
+.wrapper-hot-library {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.hot-content-library {
+    background: #eb2222;
+    text-align: center;
+    font-family: Roboto-bold;
+    color: #fff;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    padding: 3px;
+    width: 70px;
+    margin-right: 30px;
+    // align-items: center;
+
+    // width: 25%;
+}
+.content-library-text {
+    width: 72%;
+    h4 {
+        margin-bottom: 5px;
+    }
+}
+
+.row-content-library-right {
+    padding: 12px 0;
+    margin-top: 10px;
+    display: flex;
+    // justify-content: space-between;
+    text-align: start;
+    border-top: 1px solid #ccc;
+}
+
+.img-content-library-right {
+    margin: 10px;
+    // padding: 5px;
+    // border-radius: 50px;
+    background-color: #ffd800;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://s3-ap-southeast-1.amazonaws.com/tuyendung.30shine.org/data/images/TuyenDung/Icon1.png');
+}
+.content-library-text-right {
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.wrapper-img-content-right {
+    // padding: 5px;
+    background-color: #ffd800;
+    border-radius: 50px;
+
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
